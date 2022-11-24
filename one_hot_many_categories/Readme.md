@@ -7,3 +7,7 @@ This method changes your nominal categorical data, which is challenging to under
 #### Why called One-hot?
 
 If you have N distinct values in the column, it is enough to map them to N-1 binary columns, because the missing value can be deducted from other columns. If all the columns in our hand are equal to 0, the missing value must be equal to 1. This is the reason why it is called as one-hot encoding. It is also known as dummy variable trap.
+
+#### Nominal data:
+
+It is a type of categorical data that consists of the name variable without any numerical values or Order. For example, in any organization, the name of the different departments like research and development department, human resource department, accounts and billing department, Gender,etc.
