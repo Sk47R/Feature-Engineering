@@ -1,0 +1,3 @@
+## Why Encoding is important?
+
+Encoding is important because these methods will "learn" patterns from the train data, and therefore we want to avoid leaking information and overfitting. But more importantly, because we don't know whether in future / live data, we will have all the categories present in the train data, or if there will be more or less categories. Therefore, we want to anticipate this uncertainty by setting the right processes right from the start. We want to create transformers that learn the categories from the train set, and used those learned categories to create the dummy variables in both train and test sets.
