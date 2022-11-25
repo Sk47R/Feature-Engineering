@@ -87,6 +87,12 @@ Imputation is the process of replacing missing data with statistical estimates o
 
 #### 2.a Imputing missing values with Mean/Median/Mode
 
+#### 2.b Random Sample Imputation:
+
+#### 2.c Arbitrary Value Imputation:
+
+#### 2.d End Of Tail Imputation:
+
 #### 2.b Categorical Imputation
 
 When missing values is from categorical columns (string or numerical) then the missing values can be replaced with the most frequent category. But if the calues in the columns are distributed uniformly then there is not a dominant value for the replacement. In this case, inputing a new category like "MISSING" might be more sensible.
@@ -100,17 +106,3 @@ When missing values is from categorical columns (string or numerical) then the m
 #### Disadvantages:
 
 - Addition of new features to the model while encoding, which may result in poor performance
-
-#### 2.c Random Sample Imputation:
-
-#### 2.c Arbitrary Value Imputation:
-
-Arbitrary value imputation is the process of replacing all occurrences of missing values (NaN) within a variable by an arbitrary value.
-
-The most commonly used arbitrary values are 0, 999, -999 (or other combinations of 9s) or -1 (if the distribution is positive).
-
-##### Which variables can I impute with an arbitrary value?
-
-- Both categorical and numerical variables can be imputed by arbitrary values.
-
-- For categorical variables, this is the equivalent of replacing all instances of NaN by an additional label called ‘Missing’, which is a very common practice.
