@@ -3,7 +3,7 @@
 End of tail imputation is similar to arbitrary value imputation,
 but in this technique we select the arbitrary values from the end of the variable distribution.
 
-This method is mostly used in financial companies. When capturing the financial history of the customers, the missing data is replaced by a value at the end of distribution to capture the importance of "Missingness".
+This method is mostly used in financial companies. When capturing the financial history of the customers, the missing data is replaced by a value at the end of distribution to capture the importance of missing values.
 
 ### How do we select the value at the end?
 
@@ -25,7 +25,7 @@ If the value is not missing at random, we don’t want to replace it for the mea
 - Easy to understand and implement
 - Fast way of obtaining complete datasets
 - Can be integrated into production (during model deployment)
-- Captures the importance of “missingness” if there is one
+- Captures the importance of missing values.
 
 ### Disadvantages:
 
