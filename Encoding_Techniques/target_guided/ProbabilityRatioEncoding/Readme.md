@@ -35,8 +35,10 @@ In this case, as the value of the independent variable (predictor) increases, so
 
 ---
 
-## Mean Encoding
+## Probability Ratio Encoding
 
-Mean Encoding is the technique in which we replace te category values by the mean/ average value for that category.
+The encoding technique in which we replace the categories of the categorical columns by the probability ratio.
 
-For Example: If we have 4 categories in a categorical column, 'A', 'B','C','D' . Then we calculate the mean of the output for each categories. Finally we replace the categories with that mean values. If output mean for category A is 0.6 we replace A by 0.6, and so on.
+This encoding is suitable for classification problems only, where the target is binary (0 and 1).
+
+For example: for each category we calculate the mean of the output target =1, that is the probability of the target being 1(p(1)), and te probability of the output target =0 (p(0)). Then, we calculate the ratio p(1)/p(0) i.e probability ratio and finnaly replace the categories with that ratio value.
