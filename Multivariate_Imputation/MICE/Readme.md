@@ -17,7 +17,7 @@ lets consider there are 3 features and 5 rows. feature 1 has missing value at it
 2. Iteration-2
 
 - Now we take each feature column from left and move to right.
-- Feature 1, replace the mean with NaN again and then train any ML model with other rows i.e 1 , 3, 4 5 row, making feature 2 and 3 input and feature 1 output and then use row 2 as test set, and predict the value which will fill the NaN.
+- For feature 1, replace the mean with NaN again and then train any ML model with other rows i.e 1 , 3, 4 5 row, making feature 2 and 3 input and feature 1 output and then use row 2 as test set, and predict the value which will fill the NaN.
 - Now we do same for feature 2(with same model), note that the missing value of feature 1 is filled with the prediction of ML model.
 - Same for feature 3.
 
